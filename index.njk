@@ -13,12 +13,10 @@ eleventyNavigation:
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
-<h1>{% set latestPost = collections.posts[0] %}
+{% set latestPost = collections.posts[0] %}
 {% set title = latestPost.data.title %}
 {% set content = latestPost.templateContent %}
-{{ collections.posts[0].data.title | log }}
 <h1>{{title}}</h1>
 {{content | safe }}
 
 {% set postslist = collections.posts %}
-{% include 'postslist.njk' %}
