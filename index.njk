@@ -13,7 +13,7 @@ eleventyNavigation:
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
-{% set latestPost = collections.posts[0] %}
+{% set latestPost = collections.posts | last %}
 {% set title = latestPost.data.title %}
 {% set content = latestPost.templateContent %}
 <h1>{{title}}</h1>
