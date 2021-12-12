@@ -13,6 +13,7 @@
 /* Global stylesheet */
 * {
   box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
 }
 
 html,
@@ -186,10 +187,7 @@ code {
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
-.tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
-}
+
 
 
 /* Tags */
@@ -250,10 +248,10 @@ a[href].direct-link:focus:visited,
 
 p {
   line-height: 2rem;
-  font-family: 'Libre Baskerville', serif;
+  
 }
 
-p:last-child {
+.article {
   margin-bottom: 10rem;
 }
 
@@ -266,4 +264,26 @@ main hr {
   margin-bottom: 4rem;
   background: #F7F7F7;
   width: 50%;
+}
+
+
+time {
+  margin-right: 0;
+}
+
+#other-thoughts {
+  margin-bottom: 4rem;
+}
+
+#footer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+a.postlist-link {
+  text-decoration: none;
+}
+
+a.postlist-link:hover {
+  color: #616161;
 }
