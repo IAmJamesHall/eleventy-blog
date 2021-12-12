@@ -30,13 +30,16 @@
     <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
 
-      {{ content | safe }}
-      {# {{ content }} #}
+      <div class="article">
+        {{ content | safe }}
+      </div>
+      {% set postslist = collections.posts %}
+      {% include 'postslist.njk' %}
+    {% include 'footer.njk' %}
     </main>
 
 
-    {% set postslist = collections.posts %}
-    {% include 'postslist.njk' %}
-    {% include 'footer.njk' %}
+    
+    
   </body>
 </html>
