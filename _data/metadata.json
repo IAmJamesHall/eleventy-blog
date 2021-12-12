@@ -1,21 +1,21 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Justin Arisman",
+  "url": "https://blog.upatree.xyz",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "I'm a student with thoughts.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "I'm a student with thoughts",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://blog.upatree.xyz"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://blog.upatree.xyzfeed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
+    "name": "Justin Arisman",
     "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "url": "https://blog.upatree.xyz/about-me/"
   }
 }

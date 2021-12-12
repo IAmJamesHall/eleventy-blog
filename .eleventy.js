@@ -50,6 +50,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("filterTagList", filterTagList)
 
+  // log values to the node terminal
+  eleventyConfig.addFilter('log', value => {
+    console.log(value)
+})
+
   // Create an array of all tags
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
